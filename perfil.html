@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perfil de Usuario</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+</head>
+<body
+    class="min-h-screen flex items-center justify-center p-6 bg-slate-100 dark:bg-slate-950"
+>
+    <div
+    class="w-full max-w-md bg-white dark:bg-slate-800 rounded-xl shadow-lg p-6"
+    >
+    <!-- Perfil -->
+    <div class="flex items-center gap-4">
+        <img
+        src="https://i.pravatar.cc/150?img=12"
+        alt="Avatar del usuario"
+        class="w-20 h-20 rounded-full object-cover"
+        />
+        <div>
+        <h1
+            class="text-xl font-bold text-slate-900 UD: Despliegue de aplicaciones Web Programa de Estudios: Diseño y Programación Web dark:text-white"
+        >
+            Franco Mayhuire
+        </h1>
+        <p class="text-blue-600 font-medium">Desarrolladora Web</p>
+        </div>
+    </div>
+
+    <!-- Descripción -->
+    <p class="mt-5 text-slate-600 dark:text-slate-300 leading-relaxed">
+        Desarrolladora web
+    </p>
+
+    <!-- Estadísticas -->
+    <div
+        class="flex justify-between mt-6 border-t border-slate-200 dark:border-slate-700 pt-5"
+    >
+        <div class="text-center">
+        <p class="text-xl font-bold text-slate-900 dark:text-white"></p>
+        <p class="text-sm text-slate-500 dark:text-slate-400">
+            Proyectos UD: Despliegue de aplicaciones Web Programa de Estudios:  <!-- Aquí puedes agregar más información sobre el programa de estudios si lo deseas -->
+            Diseño y Programación Web
+        </p>
+        </div>
+        
+        <!-- Estadísticas -->
+        <div class="text-center">
+        <p class="text-xl font-bold text-slate-900 dark:text-white">21</p>
+        <p class="text-sm text-slate-500 dark:text-slate-400">Años</p>
+        </div>
+    </div>
+
+    <!-- Botón Contactar -->
+<button
+    onclick="window.location.href='contacto.html'"
+    class="w-full mt-6 bg-blue-700 hover:bg-blue-800 text-white font-semibold py-3 rounded-lg transition"
+>
+    Contactar
+
+    <!-- Icono de contacto -->
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="inline-block w-5 h-5 ml-2"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+    >
+        <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M3 8l7.89 5.26a2 2 0 005.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+        />
+    </svg>
+</button>
+
+    </div>
+</body>
+</html>
