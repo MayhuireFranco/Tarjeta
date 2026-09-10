@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Estilos adicionales para el formulario */
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .botonvolver {
+            display: block;
+            margin: 1rem auto;
+            padding: 0.5rem 1rem;
+            background-color: #4a5568; /* Gris oscuro */
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+    </style>
+
+    <form
+        action="mailto:franco.mayhuire@example.com"
+        method="post"
+        enctype="text/plain"
+        class="border border-yellow-500 rounded-lg p-5"
+    >
+
+        <h2 class="text-xl font-bold text-slate-900 dark:text-white mb-4">
+            Formulario de Contacto
+        </h2>
+
+        <label for="name">Nombre:</label>
+        <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            class="mb-4"
+        >
+
+        <label for="email">Correo electrónico:</label>
+        <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            class="mb-4"
+        >
+
+        <label for="message">Mensaje:</label>
+        <textarea
+            id="message"
+            name="message"
+            rows="4"
+            required
+            class="mb-4"
+        ></textarea>
+
+        <input
+            type="submit"
+            value="Enviar"
+            class="bg-blue-700 hover:bg-blue-800 text-white font-semibold px-5 py-2 rounded-lg cursor-pointer"
+        >
+
+    </form>
+    <!-- Botón Volver -->
+    <button class="botonvolver"
+        onclick="window.location.href='perfil.html'"
+        class="mt-4 bg-slate-700 hover:bg-slate-800 text-white font-semibold py-2 px-4 rounded-lg transition"
+    >
+    
+        Volver al Perfil
+    </button>
+    <footer class="mt-6 text-center text-slate-500 dark:text-slate-400">
+        &copy; 2024 Franco Mayhuire. Todos los derechos reservados.
+    </footer>
+</body>
